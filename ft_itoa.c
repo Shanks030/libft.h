@@ -40,7 +40,3 @@ char *ft_itoi (int nb)
     res[i] = '\0';
     return (strrev(res,lenght));
 }
-int main ()
-{
-  char *str = ft_itoi(12);
-    printf("%s",str);
