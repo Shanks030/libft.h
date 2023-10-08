@@ -19,8 +19,8 @@ char *ft_strdup(char *str)
 
 	i = 0;
 
-	lenght = ft_strlen(str) + 1;
-	dup = malloc (lenght * sizeof(char));
+	lenght = ft_strlen(str);
+	dup = malloc (lenght + 1* sizeof(char));
 	while (str[i] != '\0')
 	{
 		dup [i] = str [i];
