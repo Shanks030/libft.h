@@ -59,5 +59,5 @@ char *ft_strjoin(int size, char **strs, char *sep) {
     }
 
     result[index] = '\0'; 
-    return result;
+    return (result);
 }
