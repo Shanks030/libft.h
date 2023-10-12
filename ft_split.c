@@ -1,11 +1,14 @@
 #include <stdlib.h>
-int sepcheck2(char *str, char *charset, int i) {
+int sepcheck2(char *str, char *charset, int i) 
+{
     int j = 0;
     while (str[i] != '\0') 
     {
         j = 0;
-        while (charset[j] != '\0') {
-            if (str[i] == charset[j]) {
+        while (charset[j] != '\0') 
+        {
+            if (str[i] == charset[j]) 
+            {
                 return i;
             }
             j++;
@@ -20,9 +23,11 @@ int sepcheck(char *str, char *charset)
     int i = 1;
     int j = 0;
     int count = 0;
-    while (str[i] != '\0') {
+    while (str[i] != '\0') 
+    {
         j = 0;
-        while (charset[j] != '\0') {
+        while (charset[j] != '\0') 
+        {
             if (str[i] == charset[j]) 
             {
                 count++;
@@ -34,7 +39,8 @@ int sepcheck(char *str, char *charset)
     return count;
 }
 
-char **ft_split(char *str, char *charset) {
+char **ft_split(char *str, char *charset) 
+{
     int i;
     int k;
     char **tab;
@@ -53,7 +59,8 @@ char **ft_split(char *str, char *charset) {
         int j;
 
         j = 0;
-        while (j < k - current_index) {
+        while (j < k - current_index) 
+        {
             tab[i][j] = str[current_index + j];
             j++;
         }
