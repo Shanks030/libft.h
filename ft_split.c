@@ -15,7 +15,7 @@ int sepcheck2(char *str, char *charset, int i)
         }
         i++;
     }
-    return (0);
+    return (-1);
 }
 
 int sepcheck(char *str, char *charset) 
