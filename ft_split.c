@@ -1,18 +1,21 @@
 #include <stdlib.h>
-int sepcheck2(char *str, char *charset, int i) {
+int sepcheck2(char *str, char *charset, int i) 
+{
     int j = 0;
     while (str[i] != '\0') 
     {
         j = 0;
-        while (charset[j] != '\0') {
-            if (str[i] == charset[j]) {
+        while (charset[j] != '\0') 
+        {
+            if (str[i] == charset[j]) 
+            {
                 return i;
             }
             j++;
         }
         i++;
     }
-    return (0);
+    return (-1);
 }
 
 int sepcheck(char *str, char *charset) 
@@ -20,9 +23,11 @@ int sepcheck(char *str, char *charset)
     int i = 1;
     int j = 0;
     int count = 0;
-    while (str[i] != '\0') {
+    while (str[i] != '\0') 
+    {
         j = 0;
-        while (charset[j] != '\0') {
+        while (charset[j] != '\0') 
+        {
             if (str[i] == charset[j]) 
             {
                 count++;
@@ -34,7 +39,8 @@ int sepcheck(char *str, char *charset)
     return count;
 }
 
-char **ft_split(char *str, char *charset) {
+char **ft_split(char *str, char *charset) 
+{
     int i;
     int k;
     char **tab;
@@ -53,7 +59,8 @@ char **ft_split(char *str, char *charset) {
         int j;
 
         j = 0;
-        while (j < k - current_index) {
+        while (j < k - current_index) 
+        {
             tab[i][j] = str[current_index + j];
             j++;
         }
@@ -64,6 +71,12 @@ char **ft_split(char *str, char *charset) {
         i++;
 }
 }
+<<<<<<< HEAD
 //int main() {
   //  char **result = ft_split("amine", " ,em");  
 //}
+=======
+/*int main() {
+    char **result = ft_split("amine", " ,em");  
+}*/
+>>>>>>> 6a7aa21febbb4612194ebf50156f93d3af234b39
