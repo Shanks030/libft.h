@@ -71,12 +71,6 @@ char **ft_split(char *str, char *charset)
         i++;
 }
 }
-<<<<<<< HEAD
-//int main() {
-  //  char **result = ft_split("amine", " ,em");  
-//}
-=======
 /*int main() {
     char **result = ft_split("amine", " ,em");  
 }*/
->>>>>>> 6a7aa21febbb4612194ebf50156f93d3af234b39
