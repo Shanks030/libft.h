@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "libft.h"
 int sepcheck2(char *str, char *charset, int i) 
 {
     int j = 0;

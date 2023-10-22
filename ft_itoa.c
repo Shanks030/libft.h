@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 int ft_lenght(int nb)
 {
     int count = 0;
